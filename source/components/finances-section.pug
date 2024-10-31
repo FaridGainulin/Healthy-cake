@@ -1,0 +1,59 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__top-img(src="images/finances-section-top-img.png" loading="lazy" width="947" height="808" alt="image")
+      h2.finances-section__title.font-w-bold.font-s-40.text-up
+        | Ключевые показатели франшизы
+      .finances-section__sub-title.font-s-30
+        | На которые вы можете рассчитывать при запуске кофейни
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide.finances-section__card-margin-1
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="33" height="33" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-30 11 месяцев
+            .font-s-17 срок окупаемости бизнеса
+          .finances-section__card.swiper-slide.finances-section__card-margin-1
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="33" height="33" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-30 от 50 продаж
+            .font-s-17 будет совершаться ежедневно
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="33" height="33" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-30 от 800 рублей
+            .font-s-17 средний чек одного клиента
+          .finances-section__card.swiper-slide.finances-section__card-margin-2
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="33" height="33" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-30 34,5%
+            .font-s-17 рентабельность по чистой прибыли
+          .finances-section__card.swiper-slide
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="33" height="33" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-30 1 185 000 рублей
+            .font-s-17 ежемесячная выручка
+          .finances-section__card.swiper-slide.finances-section__card-margin-2
+            img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="33" height="33" alt="icon")
+            .finances-section__card-title.font-w-bold.font-s-30 408 000 рублей
+            .font-s-17 ежемесячная чистая прибыль
+        .bullet-pagination
+      img.finances-section__img-mobile(src="images/finances-section-img-mobile.png" loading="lazy" width="1163" height="322" alt="image")
+      img.finances-section__img-1(src="images/finances-section-img-1.jpg" loading="lazy" width="760" height="644" alt="image")
+      img.finances-section__img-2(src="images/finances-section-img-2.jpg" loading="lazy" width="762" height="644" alt="image")
+      img.finances-section__img-3(src="images/finances-section-img-3.jpg" loading="lazy" width="760" height="644" alt="image")
+      .finances-section__bottom
+        .finances-section__bottom-text
+          .finances-section__bottom-text-1.font-w-bold.font-s-24.text-up
+            | Узнайте, какие 
+            br.no-br
+            | инвестиции потребуются 
+            br.no-br
+            | для открытия кофейни
+          .finances-section__bottom-text-2.font-w-bold.font-s-24
+            | Скачайте 
+            span.color-red финансовую 
+            br.no-br
+            span.color-red модель 
+            | франшизы
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.jpg" loading="lazy" width="760" height="400" alt="image")
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input.input--green(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.input--green(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Скачать

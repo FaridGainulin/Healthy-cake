@@ -1,0 +1,148 @@
+.input
+  height: 45px
+  width 100%
+  padding: 0 20px;
+  font-family: 'Circe-Regular'
+  font-weight: 400
+  font-size: 14px;
+  line-height: 120%
+  color: #DDD0C0
+  border: 1px solid #DDD0C0
+  border-radius: 10px;
+  background: transparent
+  position relative
+  overflow hidden
+
+  &.active
+    .input__progress
+      opacity 1
+      min-width: 40px
+      span
+        opacity 1
+  &__progress
+    position: absolute
+    height: 100%
+    top: 0
+    left: 0
+    background: linear-gradient(90deg, #f68a0e 0%, #ffab07 100%);
+    opacity 0
+    min-width: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 16px
+    line-height: 16px
+    transition: min-width 1s, opacity 0.8s
+    color: #fff
+    font-weight: bold
+    border-radius: 100px
+    +above($breakpoints.xxl)
+      font-size: 20px
+      line-height: 20px
+    span
+      opacity 0
+      transition: 2s
+
+  transition border-color 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s
+  &:hover
+    border 2px solid #DDD0C0
+  &:focus
+    color: #DDD0C0
+    caret-color: #DDD0C0
+    border 2px solid #DDD0C0
+    box-shadow: 3px 3px 20px 0px #DDD0C0
+    // background: #fff
+    &::placeholder
+      color: #DDD0C0
+  &::placeholder
+    color: #DDD0C0
+  +above($breakpoints.sm)
+    border-radius: 15px
+    height: 50px
+    font-size: 14px;
+    padding: 0 25px;
+  +above($breakpoints.md)
+    border-radius: 20px
+    height: 55px
+    font-size: 16px;
+    padding: 0 30px;
+  +above($breakpoints.xxl)
+    padding: 0 35px;
+    font-size: 18px;
+    height: 60px
+  &.error
+    border 1px solid $color-error
+    color: $color-error
+    caret-color: $color-error
+    box-shadow: 0px 0px 22px 0px $color-error
+    // background: #fff
+    &::placeholder
+      color: $color-error
+    &::-ms-input-placeholder
+      color: $color-error
+    animation: shake 0.6s;
+    @keyframes shake
+      10%, 90%
+        transform: translate3d(-1px, 0, 0)
+      20%, 80%
+        transform: translate3d(2px, 0, 0)
+      30%, 50%, 70%
+        transform: translate3d(-4px, 0, 0)
+      40%, 60%
+        transform: translate3d(4px, 0, 0)
+
+  &--textarea
+    outline none
+    border: none
+    padding: 15px 10px 10px 20px
+    resize: none
+    height: 70px
+    width 280px
+    border-radius: 10px
+    +above($breakpoints.sm)
+      border-radius: 15px
+      padding: 15px 10px 10px 20px
+      height: 164px
+      width 250px
+    +above($breakpoints.md)
+      padding: 22px 10px 10px 33px
+      border-radius: 20px;
+      height: 181px;
+      width: 330px;
+    +above($breakpoints.xxl)
+      padding: 22px 10px 10px 33px
+      height: 198px
+      width 380px
+
+  &--green
+    color: #103A21
+    border: 1px solid #103A21
+    &:hover
+      border 2px solid #103A21
+    &:focus
+      color: #103A21
+      caret-color: #103A21
+      border 2px solid #103A21
+      box-shadow: 3px 3px 20px 0px #103A21
+      // background: #fff
+      &::placeholder
+        color: #103A21
+    &::placeholder
+      color: #103A21
+
+  &--beige
+    color: #1B3A06
+    border: 1px solid #1B3A06
+    background: #D7C0A8
+    &:hover
+      border 2px solid #1B3A06
+    &:focus
+      color: #1B3A06
+      caret-color: #1B3A06
+      border 2px solid #1B3A06
+      box-shadow: 3px 3px 20px 0px #1B3A06
+      background: #D7C0A8
+      &::placeholder
+        color: #1B3A06
+    &::placeholder
+      color: #1B3A06

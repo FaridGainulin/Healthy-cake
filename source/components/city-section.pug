@@ -1,0 +1,26 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      .city-section__box
+        .city-section__box-text
+          h1.city-section__title.font-w-bold.font-s-43.text-up
+            | Станьте партнером 
+            br
+            span.color-red франшизы 
+            | «Healthy cake»
+          .city-section__sub-title.font-bold.font-s-24.text-up
+            | и зарабатывайте 
+            br
+            span.color-red от 4,9 млн чистой прибыли в год
+          .city-section__bottom
+            img.city-section__bottom-icon(src="images/city-section-bottom-icon.png" loading="lazy" width="200" height="200" alt="icon")
+            .city-section__bottom-text.font-s-26
+              | Проверьте, свободен ли 
+              br
+              | ваш город для работы с нами
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="text" name="city" autocomplete="off" placeholder="Город")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") проверить

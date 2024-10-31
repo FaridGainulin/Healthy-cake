@@ -1,0 +1,32 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-bold.font-s-43.text-up
+        | Откройте концептуальную 
+        br.no-br
+        | кофейню «Healthy cake» 
+        br.no-br
+        | и зарабатывайте 
+        br
+        span.color-red от 408 000 ₽ ежемесячно
+      .main-section__sub-title
+        img.main-section__sub-title-icon(src="images/main-section-sub-title-icon.png" loading="lazy" width="522" height="544" alt="image")
+        .font-s-32
+          | Занимайтесь продажей 
+          br.no-br
+          | уникальных ПП-десертов 
+          br.no-br
+          | и блюд, разработанных 
+          br.no-br
+          | нутрициологом
+      .main-section__text.font-s-26
+        | получите подробную презентацию франшизы 
+        br
+        | и узнайте все детали ведения бизнеса
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Получить
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1442" height="1635" alt="image")

@@ -1,0 +1,66 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      h2.details-section__title.font-w-bold.font-s-40.text-up
+        | «Healthy cake» на 100% соответствует 
+        br.no-br
+        | формуле хорошей франшизы
+      .details-section__cards-wrapper
+        .swiper-bullet
+          .details-section__cards.swiper-wrapper
+            .details-section__card.swiper-slide
+              .details-section__card-title.font-w-bold.font-s-30.text-up УТП
+              .details-section__card-text.font-s-24
+                | Мы сами производим сбалансированные 
+                br
+                | по БЖУ десерты, блюда и перекусы, 
+                br
+                | разработанные профессиональным 
+                br
+                | нутрициологом
+            .details-section__card.swiper-slide
+              .details-section__card-title.font-w-bold.font-s-30.text-up Скорость
+              .details-section__card-text.font-s-24
+                | На открытие вам потребуется всего 
+                br
+                | 3 месяца, в течение которых вы запустите 
+                br
+                | все процессы и будете действовать 
+                br
+                | при полной поддержке франчайзера
+            .details-section__card.swiper-slide
+              .details-section__card-title.font-w-bold.font-s-30.text-up Бизнес-модель
+              .details-section__card-text.font-s-24
+                | Мы работаем с 2019 года и число наших 
+                br
+                | клиентов постоянно растёт, что говорит 
+                br
+                | о востребованности продукта 
+                br
+                | и эффективности бизнес-модели
+            .details-section__card.swiper-slide
+              .details-section__card-title.font-w-bold.font-s-30.text-up Перспективы
+              .details-section__card-text.font-s-24
+                | Кофейня — это бизнес, который легко 
+                br
+                | масштабировать и создать собственную 
+                br
+                | сеть, используя правильный план 
+                br
+                | развития
+          .bullet-pagination
+      .details-section__bottom
+        .font-w-bold.font-s-24.text-up
+          | Задайте любой 
+          br.no-br
+          | вопрос о 
+          br.no-br
+          | работе бизнеса
+        form.details-section__form(data-feedback-form)
+          textarea.input.input--green.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Вопрос")
+          .details-section__form-column
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input.input--green(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input.input--green(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Задать
+      img.details-section__img(src="images/details-section-img.png" loading="lazy" width="1110" height="963" alt="image")
